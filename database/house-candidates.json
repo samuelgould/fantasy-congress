@@ -1,0 +1,22 @@
+[
+	{"firstName": "Paul",
+		"lastName": "Ryan",
+		"state": "Wisconsin",
+		"district": "1",
+		"party": "R",
+		"incumbent": true} 
+	,
+	{"firstName": "Randy",
+		"lastName": "Bryce",
+		"state": "Wisconsin",
+		"district": "1",
+		"party": "D",
+		"incumbent": false}
+	,
+	{"firstName": "Mark",
+		"lastName": "Pocan",
+		"state": "Wisconsin",
+		"district": "2",
+		"party": "D",
+		"incumbent": true}
+]

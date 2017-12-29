@@ -9,8 +9,5 @@ const find = function () {
 const update = function () {
   console.log('do update');
 };
-const remove = function () {
-  console.log('do delete');
-};
 
 module.exports = { create, find, update};

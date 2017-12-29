@@ -3,7 +3,7 @@
 const express = require('express');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
-const houseRouter = require('../routers/house-router');
+const houseRouter = require('./routers/house-router');
 
 const app = express();
 

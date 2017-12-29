@@ -4,15 +4,15 @@
 		"state": "Wisconsin",
 		"district": "1",
 		"party": "R",
-		"incumbent": true} 
-	,
+		"incumbent": true},
+
 	{"firstName": "Randy",
 		"lastName": "Bryce",
 		"state": "Wisconsin",
 		"district": "1",
 		"party": "D",
-		"incumbent": false}
-	,
+		"incumbent": false},
+		
 	{"firstName": "Mark",
 		"lastName": "Pocan",
 		"state": "Wisconsin",

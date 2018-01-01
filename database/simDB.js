@@ -6,6 +6,10 @@ const simDB = {
     this.data.unshift(newItem);
     return newItem;
   },
+
+  find: function (query = {}) {
+    return this.data.filter(item => Object.keys(query).every(key => item[key] === query[key]));
+  },
   
   initialize: function(data) {
     this.nextVal = 1000;

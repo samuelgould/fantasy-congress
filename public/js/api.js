@@ -13,7 +13,6 @@ class Api {
 
     const queryKeys = Object.keys(query);
     queryKeys.forEach(key => url.searchParams.set(key, query[key]));
-
     return url;
   }
 

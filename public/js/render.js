@@ -11,7 +11,8 @@ class Render {
   generateCandidateElement(candidate) {
     return `
     <li class="js-candidate-id-element" data-candidate-id="${candidate.id}">
-      ${candidate.firstName} ${candidate.lastName}
+      <div class="candidate-name">${candidate.firstName} ${candidate.lastName} (${candidate.party})</div> 
+      <div>${candidate.state} ${candidate.district}<div>
     </li>`;
   }
 

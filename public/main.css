@@ -1,0 +1,17 @@
+ul {
+    list-style-type: none;
+}
+
+li {
+    border: solid 1px gray;
+    padding: 10px;
+}
+
+div {
+    margin-bottom: 0px;
+}
+
+.candidate-name {
+    font-weight: bold;
+    font-size: 20px;
+}

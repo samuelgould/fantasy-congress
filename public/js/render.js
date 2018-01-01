@@ -15,14 +15,13 @@ class Render {
 
   generateItemElement(candidate) {
     return `
-    <li class="js-item-id-element" data-item-id="${candidate.id}">
+    <li class="js-candidate-id-element" data-candidate-id="${candidate.id}">
       <input name="candidate" value="${candidate.firstName} ${candidate.lastName}"></input>
     </li>`;
   }
 
   shoppingList() {
     const listOfCandidates = this.store.data.map((item) => this.generateItemElement(item));
-    $('.js-shopping-list').html(listOfCandidates.join(''));
+    $('.js-candidate-list').html(listOfCandidates.join(''));
   }
-
 }

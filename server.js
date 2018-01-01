@@ -3,7 +3,7 @@
 const express = require('express');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
-const houseRouter = require('./routers/house-router');
+const houseRouter = require('./routers/house.router');
 
 const app = express();
 
@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/views/main.html');
 });
 
-app.use('/', houseRouter);
+app.use('/house-candidates', houseRouter);
 
 app.listen(process.env.PORT || 8080, () => {
   console.log(`Your app is listening at port ${process.env.PORT || 8080}`);

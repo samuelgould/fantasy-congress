@@ -2,7 +2,7 @@
 
 const express = require('express');
 
-const data = require('../database/house-candidates');
+const data = require('../database/candidates');
 const simDB = require('../database/simDB');
 const candidates = simDB.initialize(data);
 

@@ -1,7 +1,7 @@
 /* global $ Api Store Render */
 'use strict';
 
-const api = new Api('/house-candidates');
+const api = new Api('/candidates');
 const store = new Store();
 const render = new Render(store, api);
 

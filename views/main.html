@@ -14,6 +14,25 @@
 </head>
 <body>
     <h1>Fantasy Congress</h1>
+    <form>
+        <input type="text" placeholder="e.g. Randy Bryce">
+        <button id="js-search">Search</button>
+    </form>
+    <form>
+        <select name="Party" size=1>
+            <option selected value="all">All</option>
+            <option value="democrat">Democrat</option>
+            <option value="republican">Republican</option>
+            <option value="independent">Independent</option>
+        </select>
+        <select name="Chamber" size=1>
+            <option selected value="all">All</option>
+            <option value="house">House</option>
+            <option value="senate">Senate</option>
+        </select>
+        <input type="checkbox" value="incumbent">Incumbent
+        <button id="js-filter">Filter</button>
+    </form>
     <ul class="candidate-list js-candidate-list"></ul>
 </body>
 </html>

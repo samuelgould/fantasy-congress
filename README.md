@@ -13,8 +13,9 @@ Filter Bar:
     - Party (All, Dem, Rep, Ind) [Drop Down Bar - Default ALL]
     - Chamber (All, House, Senate) [Drop Down Bar - Default ALL]
     - Incumbent Only [check box]
-    - Order 
+    <!-- - Order
         - by Price [cheapest -> most expensive, most expensive -> cheapest]
         - by State (Alphabetical)
-        - by Name (Alphabetical)
+        - by Name (Alphabetical) 
+        BUILD OUT FUNCTIONALITY FIRST -->
 - Filter Button

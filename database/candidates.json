@@ -1,6 +1,7 @@
 [
 	{"firstName": "Paul",
 		"lastName": "Ryan",
+		"chamber": "House",
 		"state": "Wisconsin",
 		"district": "1",
 		"party": "R",
@@ -8,6 +9,7 @@
 
 	{"firstName": "Randy",
 		"lastName": "Bryce",
+		"chamber": "House",
 		"state": "Wisconsin",
 		"district": "1",
 		"party": "D",
@@ -15,8 +17,17 @@
 		
 	{"firstName": "Mark",
 		"lastName": "Pocan",
+		"chamber": "House",
 		"state": "Wisconsin",
 		"district": "2",
 		"party": "D",
-		"incumbent": true}
+		"incumbent": true},
+	
+		{"firstName": "Tammy",
+			"lastName": "Baldwin",
+			"chamber": "Senate",
+			"state": "Wisconsin",
+			"district": "",
+			"party": "D",
+			"incumbent": true}
 ]

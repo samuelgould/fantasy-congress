@@ -11,8 +11,8 @@ Filter Bar:
 
 - User can filter candidates by the following aspects:
     - Party (All, Dem, Rep, Ind) [Drop Down Bar - Default ALL]
-    - Race (All, House, Senate) [Drop Down Bar - Default ALL]
-    - Incumbant Only [check box]
+    - Chamber (All, House, Senate) [Drop Down Bar - Default ALL]
+    - Incumbent Only [check box]
     - Order 
         - by Price [cheapest -> most expensive, most expensive -> cheapest]
         - by State (Alphabetical)

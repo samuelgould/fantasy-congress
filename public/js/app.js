@@ -11,3 +11,15 @@ $(() => {
     render.candidateList();
   });
 });
+
+// Event Listeners
+
+$('#js-filter').click(function(event){
+  event.preventDefault();
+  console.log('Click Filter!');
+});
+
+$('#js-search').click(function(event){
+  event.preventDefault();
+  console.log('Click Search!');
+});

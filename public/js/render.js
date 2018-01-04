@@ -2,7 +2,7 @@
 'use strict';
 
 class Render {
-  
+
   constructor(store, api) {
     this.store = store;
     this.api = api;
@@ -10,7 +10,7 @@ class Render {
 
   generateCandidateElement(candidate) {
     return `
-    <li class="js-candidate-id-element" data-candidate-id="${candidate.id}" data-candidate-chamber="${candidate.chamber}" data-candidate-party="${candidate.party}" data-candidate-incumbent="${candidate.imcumbent}">
+    <li class="js-candidate-id-element ${candidate.id} ${candidate.chamber} ${candidate.party} ${candidate.incumbent}">
       <div class="candidate-name">${candidate.firstName} ${candidate.lastName} (${candidate.party})</div> 
       <div>${candidate.chamber}: ${candidate.state} ${candidate.district}<div>
     </li>`;

@@ -16,7 +16,13 @@ $(() => {
 
 $('#js-filter').click(function(event){
   event.preventDefault();
-  console.log('Click Filter!');
+  const incumbentCheckbox = document.getElementById('incumbent');
+  if (incumbentCheckbox.checked){
+    $('.challenger').hide();
+  }
+  else {
+    $('.challenger').show();
+  }
 });
 
 $('#js-search').click(function(event){

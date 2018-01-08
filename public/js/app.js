@@ -14,6 +14,15 @@ $(() => {
 
 // Event Listeners
 
+$('#js-search').click(function(event){
+  event.preventDefault();
+  const searchResult = $('#search').val();
+  if (searchResult.length < 3){
+    alert('Can you be a little more specific? Try a search that is at least 3 letters long.');
+  }
+
+});
+
 $('#js-filter').click(function(event){
   event.preventDefault();
   
@@ -43,9 +52,4 @@ $('#js-filter').click(function(event){
   if (incumbentCheckbox.checked){
     $('.challenger').hide();
   }
-});
-
-$('#js-search').click(function(event){
-  event.preventDefault();
-  console.log('Click Search!');
 });

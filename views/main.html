@@ -13,11 +13,12 @@
     <script src="js/app.js" defer></script>
 </head>
 <body>
-    <h1>Fantasy Congress</h1>
+    <h1 role="header">Fantasy Congress</h1>
     <form>
-        <input type="text" placeholder="e.g. Randy Bryce">
+        <input type="text" placeholder="e.g. Randy Bryce" aria-label="Candidate Search Bar">
         <button id="js-search">Search</button>
     </form>
+
     <form>
         <select name="party" id="party" size=1>
             <option selected value="all">All</option>
@@ -25,14 +26,19 @@
             <option value="republican">Republican</option>
             <option value="independent">Independent</option>
         </select>
+
         <select name="chamber" id="chamber" size=1>
             <option selected value="all">All</option>
             <option value="house">House</option>
             <option value="senate">Senate</option>
         </select>
-        <input type="checkbox" id="incumbent">Incumbent
+
+        <input type="checkbox" id="incumbent">
+        <label for="incumbent">Incumbent</label>
+
         <input type="submit" id="js-filter" value="Filter">
     </form>
+
     <ul class="candidate-list js-candidate-list"></ul>
 </body>
 </html>

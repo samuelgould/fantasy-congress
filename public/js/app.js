@@ -8,22 +8,23 @@ const render = new Render(store, api);
 $(() => {
   api.search({}, response => {
     store.data = response;
+    store.unfilteredData = response;
     render.candidateList();
   });
 });
 
 // Event Listeners
 
-$('#js-search').click(function(event){
+$('#js-search-button').click(function(event){
   event.preventDefault();
-  const searchResult = $('#search').val();
-  if (searchResult.length < 3){
-    alert('Can you be a little more specific? Try a search that is at least 3 letters long.');
-  }
-
+  const searchResult = $('#search').val().toLowerCase();
+  const candidates = store.findByName(searchResult);
+  store.data = candidates;
+  render.candidateList();
+  store.data = store.unfilteredData;
 });
 
-$('#js-filter').click(function(event){
+$('#js-filter-button').click(function(event){
   event.preventDefault();
   
   const partyFilter = $('#party').val();

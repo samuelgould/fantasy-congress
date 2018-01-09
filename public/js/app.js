@@ -15,23 +15,20 @@ $(() => {
 
 // Event Listeners
 
-$('#js-search-button').click(function(event){
+$('#js-filter-button').click(function(event){
   event.preventDefault();
+  
+  $('.js-candidate-id-element').show();
+  store.data = store.unfilteredData;
+
   const searchResult = $('#search').val().toLowerCase();
   const candidates = store.findByName(searchResult);
   store.data = candidates;
   render.candidateList();
-  store.data = store.unfilteredData;
-});
 
-$('#js-filter-button').click(function(event){
-  event.preventDefault();
-  
   const partyFilter = $('#party').val();
   const chamberFilter = $('#chamber').val();
   const incumbentCheckbox = document.getElementById('incumbent');
-
-  $('.js-candidate-id-element').show();
 
   if (partyFilter === 'democrat'){
     $('.R').hide();
